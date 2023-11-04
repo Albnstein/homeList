@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+
+    <title>List of Divs with JSON Data</title>
+
+    <style>
+        /* CSS for the div boxes */
+         *{
+            /* font-size: 17px; */
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+            padding: 0%;
+            margin: 0%;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        div , h1 , h4 ,p , h3{
+            padding: 0px;
+            margin: 0px;
+        }
+        .list_item{
+            padding: 10px 30px 10px 35px;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.492);
+        }
+        .list_item:hover{
+            background-color: #d3d3d3;
+        }
+        .image_box{
+            height: 50px;
+            width: 50px;
+            flex-shrink: 0;
+            padding: 2px;
+        }
+        .tex_box{
+            height: 100%;
+            width: 50%;
+            flex: 1;
+            flex-grow: 1;
+            padding: 10px 20px 10px 20px;
+        }
+        .text_url , .text_title{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-wrap: nowrap;
+        }
+
+        .link_click_box{
+            flex-shrink: 1;
+            flex-grow: 50%;
+            
+        }
+        .first_image{
+            border-radius: 100%;
+            border: 1px solid black;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+    </script>
+</head>
+<body>
+
+<div id="container" style="margin-bottom: 300px; margin-top: 0px;">
+    
+    <div class="list_item">
+        <div class="image_box">
+            <img class="first_image" alt="Girl in a jacket" src="https://www.google.com/s2/favicons?domain=https://www.w3schools.com/&sz=128" />
+        </div>
+        <div class="tex_box">
+            <h3 class="text_title">Good morning hello</h3>
+            <p class="text_url">https://www.google.com/search?q=display+flex+css&rlz=1C1UEAD_enIN1031IN1031&oq=display+flex&gs_lcrp=EgZjaHJvbWUqBwgBEAAYgAQyDwgAEEUYORiDARixAxiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDUzMjRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8</p>
+        </div>
+        <div class="link_click_box">
+            <svg class="" style="height: 30px;width: 30px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path>
+            </svg>
+        </div>
+    </div>
+
+</div>
+
+<script>
+        // Sample JSON data
+
+        // var jsonData = androidInterface.getJsonData();
+        // var jsonData = {"0":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"1":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"2":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"3":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"4":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"5":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"6":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"7":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"8":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"9":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0}};
+        // var jsonData = JSON.parse(`{"0":{"Id":1,"Title":"twitter","Url":"https:\/\/twitter.com","Date":"09-09-2023 11:26:05","Description":"Join Twitter today.","Rating":0,"Hidden":0,"Pin":0,"Trash":0}}`);
+        var json = `{"0":{"Id":69,"Title":"2@dFMm7jrMpJBZ84rXBb+oTYf4oQi2hpIsTKRXeRBv+oXUYMfkUMgklUXDGUYkNEngnIzvoJ+8Nz65qw==,jU2QhYmebZLfJhpViccutwIId1FL\/3fftK2DYCg3iE8=,SeOWb7A9MehyFQ\/cIQdfMoGCRv1fHpl\/NP98S0dJLk8=,6\/gl\/hqpn5+fbveWuvXlzTS8Laen4bfLWXxrR6uNx9I=,1","Url":"","Date":"01-11-2023 16:00:09","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"1":{"Id":68,"Title":"","Url":"https:\/\/www.qrcoder.co.uk","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"2":{"Id":67,"Title":"","Url":"https:\/\/www.qrcoder.co.uk","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"3":{"Id":66,"Title":"","Url":"https:\/\/www.qrcoder.co.uk\/","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"4":{"Id":65,"Title":"","Url":"https:\/\/www.qrcoder.co.uk\/","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"5":{"Id":64,"Title":"","Url":"https:\/\/randomqr.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"6":{"Id":63,"Title":"Thanks for scanning our video thumbnail. Now, go write some code!","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"7":{"Id":62,"Title":"hello","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"8":{"Id":61,"Title":"hello","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"9":{"Id":60,"Title":"","Url":"https:\/\/randomqr.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"10":{"Id":59,"Title":"","Url":"www.eslkidsgames.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"11":{"Id":58,"Title":"","Url":"https:\/\/www.youtube.com\/watch?v=dQw4w9WgXcQ","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"12":{"Id":57,"Title":"","Url":"https:\/\/thenextweb.com\/news\/do-not-scan-random-qr-codes","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"13":{"Id":56,"Title":"","Url":"https:\/\/youtu.be\/iR8Gr4y9hdE","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"14":{"Id":55,"Title":"","Url":"www.eslkidsgames.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"15":{"Id":54,"Title":"","Url":"https:\/\/youtu.be\/iR8Gr4y9hdE","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"16":{"Id":53,"Title":"","Url":"www.eslkidsgames.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"17":{"Id":52,"Title":"","Url":"https:\/\/youtu.be\/iR8Gr4y9hdE","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"18":{"Id":51,"Title":"","Url":"www.eslkidsgames.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"19":{"Id":50,"Title":"","Url":"https:\/\/youtu.be\/iR8Gr4y9hdE","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"20":{"Id":49,"Title":"","Url":"www.eslkidsgames.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"21":{"Id":48,"Title":"","Url":"https:\/\/youtu.be\/iR8Gr4y9hdE","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"22":{"Id":47,"Title":"","Url":"www.eslkidsgames.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"23":{"Id":46,"Title":"","Url":"https:\/\/thenextweb.com\/news\/do-not-scan-random-qr-codes","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"24":{"Id":45,"Title":"","Url":"https:\/\/www.javatpoint.com\/python-tutorial","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"25":{"Id":44,"Title":"e0d10b2d-dff1-4f03-9e58-5a7a50b99934","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"26":{"Id":43,"Title":"3728e5bf-b473-4396-b685-f5f36b1f4f87","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"27":{"Id":42,"Title":"","Url":"http:\/\/www.stuffaboutcode.com","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"28":{"Id":41,"Title":"","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"29":{"Id":40,"Title":"","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"30":{"Id":39,"Title":"","Url":"http:\/\/127.0.0.1:8001\/q\/sts0wh9s","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"31":{"Id":38,"Title":"http","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"32":{"Id":37,"Title":"","Url":"https:\/\/l.ead.me\/api-1","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0},"33":{"Id":36,"Title":"http","Url":"","Date":"","Rating":0,"Hidden":0,"Pin":0,"Trash":0}}`;
+
+        // var jsonData = JSON.parse(androidInterface.getJsonData());
+        var jsonData = JSON.parse(json);
+
+        var container = document.getElementById("container");
+
+        // Loop through the JSON data and create div elements
+        for (var key in jsonData) {
+            if (jsonData.hasOwnProperty(key)) {
+                var item = jsonData[key];
+
+                // Create a div element for each item
+                var div = document.createElement("div");
+                div.className = "data-box"; // Apply the "data-box" CSS class
+
+                // Populate the div element with data
+                var domain = item.Url.substring(item.Url.lastIndexOf(".", item.Url.lastIndexOf(".") - 1) + 1);
+
+    //             div.innerHTML = `<div class="data-box row">
+    //     <div class="col-9 p-0 ps-1 pe-1" onclick="androidInterface.onButtonClick('${item.Id}')">
+    //         <p class="overflow-hidden text-nowrap">${item.Title}</p>
+    //         <div class="d-inline-flex align-items-center ps-1 pe-1">
+    //             <img class="rounded-circle" style="width: 20px; height: 20px;" src="https://www.google.com/s2/favicons?domain=${domain}&sz=128" />
+    //             <p class="text-nowrap overflow-hidden" style="overflow:hidden;" >${item.Url.length > 25 ? item.Url.substring(0, 25 - 3) + "..." : item.Url}</p>
+    //         </div>
+    //     </div>
+    //     <div class="col-3 align-self-center text-center" onclick="androidInterface.openUrl('${item.Url}')">
+    //         <svg class="" style="height: 30px;width: 30px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+    //             <path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path>
+    //         </svg>
+    //     </div>
+    // </div>`;
+
+          div.innerHTML = `<div class="list_item" onclick="androidInterface.onButtonClick('${item.Id}')" >
+        <div class="image_box">
+            <img class="first_image" src="https://www.google.com/s2/favicons?domain=${domain}&sz=128" />
+        </div>
+        <div class="tex_box">
+            <h3 class="text_title">${item.Title}</h3>
+            <p class="text_url">${item.Url}</p>
+        </div>
+        <div class="link_click_box" onclick="androidInterface.openUrl('${item.Url}')">
+            <svg class="" style="height: 30px;width: 30px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"></path>
+            </svg>
+        </div>
+    </div>`;
+
+                // Append the div element to the container
+                container.appendChild(div);
+            }
+        }
+    </script>
+</body>
+</html>
